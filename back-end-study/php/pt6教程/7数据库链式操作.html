@@ -1,0 +1,1134 @@
+<!DOCTYPE html><html><head>
+      <title>7&#x6570;&#x636E;&#x5E93;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/hanlu/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.0/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="thinkphp6-%E6%95%B0%E6%8D%AE%E5%BA%93%E9%93%BE%E5%BC%8F%E6%93%8D%E4%BD%9C">ThinkPHP6 &#x6570;&#x636E;&#x5E93;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;</h1>
+
+<ul>
+<li>&#x6570;&#x636E;&#x5E93;&#x63D0;&#x4F9B;&#x7684;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7684;&#x63D0;&#x9AD8;&#x6570;&#x636E;&#x5B58;&#x53D6;&#x7684;&#x4EE3;&#x7801;&#x6E05;&#x6670;&#x5EA6;&#x548C;&#x5F00;&#x53D1;&#x6548;&#x7387;&#xFF0C;&#x5E76;&#x4E14;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684;CURD&#x64CD;&#x4F5C;</li>
+<li>&#x5E26;*&#x6807;&#x8BC6;&#x7684;&#x8868;&#x793A;&#x652F;&#x6301;&#x591A;&#x6B21;&#x8C03;&#x7528;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FDE;&#x8D2F;&#x64CD;&#x4F5C;</strong></th>
+<th><strong>&#x4F5C;&#x7528;</strong></th>
+<th><strong>&#x652F;&#x6301;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>where*</td>
+<td>&#x7528;&#x4E8E;AND&#x67E5;&#x8BE2;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>table</td>
+<td>&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#x540D;&#x79F0;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>name</td>
+<td>&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x8868;&#x540D;&#x79F0;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>field*</td>
+<td>&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5;&#xFF08;&#x652F;&#x6301;&#x5B57;&#x6BB5;&#x6392;&#x9664;&#xFF09;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>order*</td>
+<td>&#x7528;&#x4E8E;&#x5BF9;&#x7ED3;&#x679C;&#x6392;&#x5E8F;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>&#x7528;&#x4E8E;&#x9650;&#x5236;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x6570;&#x91CF;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;</td>
+</tr>
+<tr>
+<td>page</td>
+<td>&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x5206;&#x9875;&#xFF08;&#x5185;&#x90E8;&#x4F1A;&#x8F6C;&#x6362;&#x6210;limit&#xFF09;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&#x4EE5;&#x4E0B;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#xFF1A;&#x81EA;&#x5B66;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FDE;&#x8D2F;&#x64CD;&#x4F5C;</strong></th>
+<th><strong>&#x4F5C;&#x7528;</strong></th>
+<th><strong>&#x652F;&#x6301;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>whereOr*</td>
+<td>&#x7528;&#x4E8E;OR&#x67E5;&#x8BE2;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>whereTime*</td>
+<td>&#x7528;&#x4E8E;&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x7684;&#x5FEB;&#x6377;&#x67E5;&#x8BE2;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>alias</td>
+<td>&#x7528;&#x4E8E;&#x7ED9;&#x5F53;&#x524D;&#x6570;&#x636E;&#x8868;&#x5B9A;&#x4E49;&#x522B;&#x540D;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>group</td>
+<td>&#x7528;&#x4E8E;&#x5BF9;&#x67E5;&#x8BE2;&#x7684;group&#x652F;&#x6301;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>having</td>
+<td>&#x7528;&#x4E8E;&#x5BF9;&#x67E5;&#x8BE2;&#x7684;having&#x652F;&#x6301;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>join*</td>
+<td>&#x7528;&#x4E8E;&#x5BF9;&#x67E5;&#x8BE2;&#x7684;join&#x652F;&#x6301;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>union*</td>
+<td>&#x7528;&#x4E8E;&#x5BF9;&#x67E5;&#x8BE2;&#x7684;union&#x652F;&#x6301;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;</td>
+</tr>
+<tr>
+<td>view*</td>
+<td>&#x7528;&#x4E8E;&#x89C6;&#x56FE;&#x67E5;&#x8BE2;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6570;&#x7EC4;</td>
+</tr>
+<tr>
+<td>distinct</td>
+<td>&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x7684;distinct&#x652F;&#x6301;</td>
+<td>&#x5E03;&#x5C14;&#x503C;</td>
+</tr>
+<tr>
+<td>lock</td>
+<td>&#x7528;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9501;&#x673A;&#x5236;</td>
+<td>&#x5E03;&#x5C14;&#x503C;</td>
+</tr>
+<tr>
+<td>cache</td>
+<td>&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x7F13;&#x5B58;</td>
+<td>&#x652F;&#x6301;&#x591A;&#x4E2A;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>comment</td>
+<td>&#x7528;&#x4E8E;SQL&#x6CE8;&#x91CA;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>force</td>
+<td>&#x7528;&#x4E8E;&#x6570;&#x636E;&#x96C6;&#x7684;&#x5F3A;&#x5236;&#x7D22;&#x5F15;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>master</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x4E3B;&#x670D;&#x52A1;&#x5668;&#x8BFB;&#x53D6;&#x6570;&#x636E;</td>
+<td>&#x5E03;&#x5C14;&#x503C;</td>
+</tr>
+<tr>
+<td>strict</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x4E25;&#x683C;&#x68C0;&#x6D4B;&#x5B57;&#x6BB5;&#x540D;&#x662F;&#x5426;&#x5B58;&#x5728;</td>
+<td>&#x5E03;&#x5C14;&#x503C;</td>
+</tr>
+<tr>
+<td>sequence</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x81EA;&#x589E;&#x5E8F;&#x5217;&#x540D;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>failException</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x6CA1;&#x6709;&#x67E5;&#x8BE2;&#x5230;&#x6570;&#x636E;&#x662F;&#x5426;&#x629B;&#x51FA;&#x5F02;&#x5E38;</td>
+<td>&#x5E03;&#x5C14;&#x503C;</td>
+</tr>
+<tr>
+<td>partition</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x5206;&#x533A;&#x4FE1;&#x606F;</td>
+<td>&#x6570;&#x7EC4; &#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x4F7F;&#x7528;REPLACE&#x65B9;&#x5F0F;&#x5199;&#x5165;</td>
+<td>&#x5E03;&#x5C14;&#x503C;</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x989D;&#x5916;&#x67E5;&#x8BE2;&#x89C4;&#x5219;</td>
+<td>&#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+<tr>
+<td>duplicate</td>
+<td>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;DUPLCATE&#x4FE1;&#x606F;</td>
+<td>&#x6570;&#x7EC4; &#x5B57;&#x7B26;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 class="mume-header" id="%E4%B8%80-%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%9F%A5%E8%AF%A2">&#x4E00;&#x3001;&#x8868;&#x8FBE;&#x5F0F;&#x67E5;&#x8BE2;</h2>
+
+<ul>
+<li>&#x8868;&#x8FBE;&#x5F0F;&#x662F;SQL&#x8BED;&#x53E5;&#x7684;&#x6761;&#x4EF6;</li>
+<li>&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x5206;&#x5927;&#x5C0F;&#x5199;</li>
+<li>&#x8868;&#x8FBE;&#x5F0F;&#x5199;&#x5728;<code>where</code>&#x91CC;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8868;&#x8FBE;&#x5F0F;</strong></th>
+<th><strong>&#x542B;&#x4E49;</strong></th>
+<th><strong>&#x67E5;&#x8BE2;&#x65B9;&#x6CD5;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>&#x7B49;&#x4E8E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>&#x4E0D;&#x7B49;&#x4E8E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>&#x5927;&#x4E8E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>&#x5927;&#x4E8E;&#x7B49;&#x4E8E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>&#x5C0F;&#x4E8E;</td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;</td>
+<td></td>
+</tr>
+<tr>
+<td>[NOT] LIKE</td>
+<td>&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;</td>
+<td>whereLike/whereNotLike</td>
+</tr>
+<tr>
+<td>[NOT] BETWEEN</td>
+<td>&#xFF08;&#x4E0D;&#x5728;&#xFF09;&#x533A;&#x95F4;&#x67E5;&#x8BE2;</td>
+<td>whereBetween/whereNotBetween</td>
+</tr>
+<tr>
+<td>[NOT] IN</td>
+<td>&#xFF08;&#x4E0D;&#x5728;&#xFF09;IN &#x67E5;&#x8BE2;</td>
+<td>whereIn/whereNotIn</td>
+</tr>
+<tr>
+<td>[NOT] NULL</td>
+<td>&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x662F;&#x5426;&#xFF08;&#x4E0D;&#xFF09;&#x662F;NULL</td>
+<td>whereNull/whereNotNull</td>
+</tr>
+</tbody>
+</table>
+<h3 class="mume-header" id="where%E6%9F%A5%E8%AF%A2"><code>where</code>&#x67E5;&#x8BE2;</h3>
+
+<ul>
+<li><code>where</code>&#x65B9;&#x6CD5;&#x5728;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x91CC;&#x9762;&#x662F;&#x6700;&#x5E38;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x5305;&#x62EC;&#x666E;&#x901A;&#x67E5;&#x8BE2;&#x3001;&#x8868;&#x8FBE;&#x5F0F;&#x67E5;&#x8BE2;&#x3001;&#x5FEB;&#x6377;&#x67E5;&#x8BE2;&#x3001;&#x533A;&#x95F4;&#x67E5;&#x8BE2;&#x3001;&#x7EC4;&#x5408;&#x67E5;&#x8BE2;&#x5728;&#x5185;&#x7684;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token shell-comment comment"># &#x7B49;&#x4E8E;&#xFF08;=&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;=&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;1&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x4E0D;&#x7B49;&#x4E8E;&#xFF08;&lt;&gt;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&lt;&gt;&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;2&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x5927;&#x4E8E;&#xFF08;&gt;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&gt;&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;3&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#xFF08;&gt;=&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&gt;=&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;4&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x5C0F;&#x4E8E;&#xFF08;&lt;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&lt;&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;5&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#xFF08;&lt;=&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&lt;=&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;6&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x591A;where</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&gt;&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;3&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;&lt;&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;8&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># LIKE</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;like&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;%&#x8FDE;&#x8863;&#x88D9;%&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment">#  NOT LIKE</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;not like&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;%&#x8FDE;&#x8863;&#x88D9;%&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># BETWEEN</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;between&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;6,10&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment">#  NOT BETWEEN</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;not between&apos;</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># IN</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;in&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;4,7,10&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment">#  NOT IN</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;not in&apos;</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<h2 class="mume-header" id="%E4%BA%8C-%E6%95%B0%E6%8D%AE%E8%A1%A8">&#x4E8C;&#x3001;&#x6570;&#x636E;&#x8868;</h2>
+
+<h3 class="mume-header" id="1-table-%E5%92%8C-name">1&#x3001;<code>table</code> &#x548C; <code>name</code></h3>
+
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token shell-comment comment"># &#x5FC5;&#x987B;&#x5B8C;&#x6574;&#x6570;&#x636E;&#x5E93;&#x540D;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;10&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token shell-comment comment"># &#x6570;&#x636E;&#x5E93;&#x672A;&#x8BBE;&#x7F6E;&#x524D;&#x7F00;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;11&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token shell-comment comment"># &#x6570;&#x636E;&#x5E93;&#x8BBE;&#x7F6E;&#x524D;&#x7F00;&#xFF0C;&#x65E0;&#x524D;&#x7F00;&#x8BBF;&#x95EE;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">name</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;list&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;12&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><h3 class="mume-header" id="2-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%89%8D%E7%BC%80">2&#x3001;&#x6570;&#x636E;&#x5E93;&#x524D;&#x7F00;</h3>
+
+<blockquote>
+<p>&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E; <code>database.php</code></p>
+</blockquote>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token keyword">return</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">&apos;connections&apos;</span>     <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">&apos;mysql&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x8868;&#x524D;&#x7F00;</span>
+            <span class="token single-quoted-string string">&apos;prefix&apos;</span>  <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.prefix&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;shop_&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</pre><hr>
+<h2 class="mume-header" id="%E4%B8%89-%E8%BF%94%E5%9B%9E%E5%80%BC">&#x4E09;&#x3001;&#x8FD4;&#x56DE;&#x503C;</h2>
+
+<ul>
+<li><code>field</code> &#x65B9;&#x6CD5;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x662F;&#x6807;&#x8BC6;&#x8981;&#x8FD4;&#x56DE;&#x6216;&#x8005;&#x64CD;&#x4F5C;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x548C;&#x5199;&#x5165;&#x64CD;&#x4F5C;</li>
+<li>&#x6240;&#x6709;&#x7684;&#x67E5;&#x8BE2;&#x65B9;&#x6CD5;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>field</code>&#x65B9;&#x6CD5;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token shell-comment comment"># &#x5B57;&#x7B26;&#x4E32;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title,price,discount as d&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x6570;&#x7EC4;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+                <span class="token single-quoted-string string">&apos;title&apos;</span><span class="token punctuation">,</span>
+                <span class="token single-quoted-string string">&apos;price&apos;</span><span class="token punctuation">,</span>
+                <span class="token single-quoted-string string">&apos;discount&apos;</span><span class="token operator">=</span><span class="token operator">&gt;</span><span class="token single-quoted-string string">&apos;d&apos;</span>
+            <span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x6DFB;&#x52A0;&#xFF0C;&#x53EA;&#x80FD;&#x6DFB;&#x52A0;&#x8FD9;&#x51E0;&#x4E2A;&#x5B57;&#x6BB5;</span>
+<span class="token shell-comment comment"># &#x591A;field</span>
+<span class="token variable">$data</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">&apos;title&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">&apos;&#x65B0;&#x5546;&#x54C1;&apos;</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">&apos;price&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">&apos;discount&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token single-quoted-string string">&apos;add_time&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1576080000</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token variable">$insert</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;price&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;discount&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;add_time&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token variable">$data</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$insert</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token shell-comment comment"># &#x67E5;&#x8BE2;&#x5168;&#x90E8;&#x5B57;&#x6BB5;&#xFF0C;&#x901F;&#x5EA6;&#x8F83;&#x5FEB;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+            <span class="token comment">// -&gt;field(&apos;*&apos;)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<h2 class="mume-header" id="%E5%9B%9B-%E6%8E%92%E5%BA%8F">&#x56DB;&#x3001;&#x6392;&#x5E8F;</h2>
+
+<ul>
+<li><code>order</code> &#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5BF9;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#x6392;&#x5E8F;&#x6216;&#x8005;&#x4F18;&#x5148;&#x7EA7;&#x9650;&#x5236;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title,price,id&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;price&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<h2 class="mume-header" id="%E4%BA%94-%E5%88%86%E9%A1%B5">&#x4E94;&#x3001;&#x5206;&#x9875;</h2>
+
+<ul>
+<li><code>limit</code> &#x65B9;&#x6CD5;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x548C;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x91CF;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title,price,id&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;price&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">limit</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title,price,id&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;price&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">limit</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ul>
+<li><code>page</code> &#x65B9;&#x6CD5;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5206;&#x9875;&#x67E5;&#x8BE2;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">field</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;title,price,id&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;price&apos;</span><span class="token punctuation">,</span><span class="token single-quoted-string string">&apos;DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">page</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<h3 class="mume-header" id="%E5%85%AD-%E8%81%9A%E5%90%88%E6%9F%A5%E8%AF%A2">&#x516D;&#x3001;&#x805A;&#x5408;&#x67E5;&#x8BE2;</h3>
+
+<ul>
+<li>&#x805A;&#x5408;&#x65B9;&#x6CD5;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x9ED8;&#x8BA4;&#x90FD;&#x662F;0&#xFF0C;&#x805A;&#x5408;&#x67E5;&#x8BE2;&#x90FD;&#x53EF;&#x4EE5;&#x914D;&#x5408;&#x5176;&#x5B83;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>&#x65B9;&#x6CD5;</strong></th>
+<th><strong>&#x529F;&#x80FD;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td>&#x7EDF;&#x8BA1;&#x6570;&#x91CF;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x53EF;&#x9009;&#xFF09;</td>
+</tr>
+<tr>
+<td>max</td>
+<td>&#x83B7;&#x53D6;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</td>
+</tr>
+<tr>
+<td>min</td>
+<td>&#x83B7;&#x53D6;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</td>
+</tr>
+<tr>
+<td>avg</td>
+<td>&#x83B7;&#x53D6;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</td>
+</tr>
+<tr>
+<td>sum</td>
+<td>&#x83B7;&#x53D6;&#x603B;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token comment">// &#x7EDF;&#x8BA1;&#x6570;&#x91CF;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x53EF;&#x9009;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">avg</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x603B;&#x6570;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x8981;&#x7EDF;&#x8BA1;&#x7684;&#x5B57;&#x6BB5;&#x540D;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</span>
+<span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<h2 class="mume-header" id="%E4%B8%83-%E6%90%9C%E7%B4%A2-%E6%8E%92%E5%BA%8F%E7%A4%BA%E4%BE%8B">&#x4E03;&#x3001;&#x641C;&#x7D22;&#x3001;&#x6392;&#x5E8F;&#x793A;&#x4F8B;</h2>
+
+<blockquote>
+<p>controller&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token variable">$title</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&#x5546;&#x57CE;&apos;</span><span class="token punctuation">;</span>
+    <span class="token variable">$login</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&#x6B27;&#x9633;&#x514B;&apos;</span><span class="token punctuation">;</span>
+    <span class="token shell-comment comment"># &#x5DE6;&#x4FA7;&#x83DC;&#x5355;</span>
+    <span class="token variable">$menu</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_menu&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;fid&apos;</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$left</span> <span class="token operator">=</span> <span class="token variable">$menu</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$left</span> <span class="token keyword">as</span> <span class="token operator">&amp;</span><span class="token variable">$left_v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$left_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;lists&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_menu&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;fid&apos;</span><span class="token punctuation">,</span><span class="token variable">$left_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token shell-comment comment"># &#x53F3;&#x4FA7;&#x5217;&#x8868;</span>
+    <span class="token variable">$param</span> <span class="token operator">=</span> <span class="token scope">Request<span class="token punctuation">::</span></span><span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token variable">$list</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token variable">$where</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;add_time DESC&apos;</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id DESC&apos;</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$right</span> <span class="token operator">=</span> <span class="token variable">$list</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$right</span> <span class="token keyword">as</span> <span class="token operator">&amp;</span><span class="token variable">$right_v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$right_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;cat&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_cat&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token variable">$right_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;cat&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;name&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">&apos;title&apos;</span>  <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$title</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;login&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$login</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;left&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$left</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;right&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$right</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;status&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><blockquote>
+<p>view&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>post<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-form-item<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">margin-top</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token unit">px</span><span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-input-inline<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>status<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                &lt;option value=&quot;0&quot; {if $status==0}selected{/if}&gt;&#x5168;&#x90E8;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                &lt;option value=&quot;1&quot; {if $status==1}selected{/if}&gt;&#x5F00;&#x542F;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+                &lt;option value=&quot;2&quot; {if $status==2}selected{/if}&gt;&#x5173;&#x95ED;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-btn layui-btn-primary<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-icon<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token entity" title="&#xE615;">&amp;#xe615;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>&#x641C;&#x7D22;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</pre><hr>
+<h2 class="mume-header" id="%E5%85%AB-%E5%88%86%E9%A1%B5%E7%A4%BA%E4%BE%8B">&#x516B;&#x3001;&#x5206;&#x9875;&#x793A;&#x4F8B;</h2>
+
+<blockquote>
+<p>controller&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token variable">$title</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&#x5546;&#x57CE;&apos;</span><span class="token punctuation">;</span>
+    <span class="token variable">$login</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&#x6B27;&#x9633;&#x514B;&apos;</span><span class="token punctuation">;</span>
+    <span class="token shell-comment comment"># &#x5DE6;&#x4FA7;&#x83DC;&#x5355;</span>
+    <span class="token variable">$menu</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_menu&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;fid&apos;</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$left</span> <span class="token operator">=</span> <span class="token variable">$menu</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$left</span> <span class="token keyword">as</span> <span class="token operator">&amp;</span><span class="token variable">$left_v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$left_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;lists&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_menu&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;fid&apos;</span><span class="token punctuation">,</span><span class="token variable">$left_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token shell-comment comment"># &#x53F3;&#x4FA7;&#x5217;&#x8868;</span>
+    <span class="token variable">$param</span> <span class="token operator">=</span> <span class="token scope">Request<span class="token punctuation">::</span></span><span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token variable">$p</span> <span class="token operator">=</span> <span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;p&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;p&apos;</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x7EDF;&#x8BA1;&#x603B;&#x6570;</span>
+    <span class="token variable">$count</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token variable">$where</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$list</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token variable">$where</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;add_time DESC&apos;</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id DESC&apos;</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">page</span><span class="token punctuation">(</span><span class="token variable">$p</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+                <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$right</span> <span class="token operator">=</span> <span class="token variable">$list</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$right</span> <span class="token keyword">as</span> <span class="token operator">&amp;</span><span class="token variable">$right_v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$right_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;cat&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_cat&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token variable">$right_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;cat&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;name&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">&apos;title&apos;</span>  <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$title</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;login&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$login</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;left&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$left</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;right&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$right</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;count&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">ceil</span><span class="token punctuation">(</span><span class="token variable">$count</span><span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;p&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$p</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;status&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> <span class="token number">0</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><blockquote>
+<p>view&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-box layui-laypage layui-laypage-default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/index.php/Index/index?p={$p-1}&amp;status={$status}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-laypage-prev {if $p&lt;=1}layui-disabled{/if}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x4E0A;&#x4E00;&#x9875;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+    {for start=&quot;0&quot; end=&quot;$count&quot;}
+        {if $p == $i+1}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-laypage-curr<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-laypage-em<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>{$i+1}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+        {else/}
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/index.php/Index/index?p={$i+1}&amp;status={$status}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{$i+1}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+        {/if}
+    {/for}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/index.php/Index/index?p={$p+1}&amp;status={$status}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>layui-laypage-next {if $p&gt;=$count}layui-disabled{/if}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x4E0B;&#x4E00;&#x9875;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</pre><hr>
+<h2 class="mume-header" id="%E4%B9%9D-%E6%A8%A1%E7%89%88%E5%88%86%E9%A1%B5">&#x4E5D;&#x3001;&#x6A21;&#x7248;&#x5206;&#x9875;</h2>
+
+<ul>
+<li><code>paginate</code> &#x5185;&#x7F6E;&#x4E86;&#x5206;&#x9875;&#x5B9E;&#x73B0;&#xFF0C;&#x8981;&#x7ED9;&#x6570;&#x636E;&#x6DFB;&#x52A0;&#x5206;&#x9875;&#x8F93;&#x51FA;&#x529F;&#x80FD;&#x53D8;&#x5F97;&#x975E;&#x5E38;&#x7B80;&#x5355;</li>
+<li><code>render</code> &#x83B7;&#x53D6;&#x7FFB;&#x9875;html&#x4EE3;&#x7801;</li>
+<li><code>total</code> &#x83B7;&#x53D6;&#x603B;&#x6570;&#x91CF;</li>
+</ul>
+<blockquote>
+<p>controller&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">paginate</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">echo</span> <span class="token single-quoted-string string">&apos;&lt;hr&gt;&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$select</span> <span class="token keyword">as</span> <span class="token variable">$v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$v</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">echo</span> <span class="token single-quoted-string string">&apos;&lt;hr&gt;&apos;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">echo</span> <span class="token single-quoted-string string">&apos;&lt;hr&gt;&apos;</span><span class="token punctuation">;</span>
+<span class="token function">print_r</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;&#x603B;&#x6570;&#xFF1A;&apos;</span><span class="token punctuation">.</span><span class="token variable">$select</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">total</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token keyword">echo</span> <span class="token single-quoted-string string">&apos;&lt;hr&gt;&apos;</span><span class="token punctuation">;</span>
+<span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">&apos;select&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$select</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><blockquote>
+<p>view&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{$select|raw}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</pre><blockquote>
+<p>css&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector"><span class="token class">.pagination</span></span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token unit">px</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token unit">px</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; li</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> inline<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; li &gt; a,
+<span class="token class">.pagination</span> &gt; li &gt; span</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">6</span><span class="token unit">px</span> <span class="token number">12</span><span class="token unit">px</span><span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">-1</span><span class="token unit">px</span><span class="token punctuation">;</span>
+    <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">1.42857143</span><span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#337ab7</span><span class="token punctuation">;</span>
+    <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token unit">px</span> solid <span class="token hexcode">#ddd</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; li<span class="token pseudo-class">:first-child</span> &gt; a,
+<span class="token class">.pagination</span> &gt; li<span class="token pseudo-class">:first-child</span> &gt; span</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token property">border-top-left-radius</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token unit">px</span><span class="token punctuation">;</span>
+    <span class="token property">border-bottom-left-radius</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token unit">px</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; li<span class="token pseudo-class">:last-child</span> &gt; a,
+<span class="token class">.pagination</span> &gt; li<span class="token pseudo-class">:last-child</span> &gt; span</span> <span class="token punctuation">{</span>
+    <span class="token property">border-top-right-radius</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token unit">px</span><span class="token punctuation">;</span>
+    <span class="token property">border-bottom-right-radius</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token unit">px</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; li &gt; a<span class="token pseudo-class">:hover</span>,
+<span class="token class">.pagination</span> &gt; li &gt; span<span class="token pseudo-class">:hover</span>,
+<span class="token class">.pagination</span> &gt; li &gt; a<span class="token pseudo-class">:focus</span>,
+<span class="token class">.pagination</span> &gt; li &gt; span<span class="token pseudo-class">:focus</span></span> <span class="token punctuation">{</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#23527c</span><span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#eee</span><span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#ddd</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; <span class="token class">.active</span> &gt; a,
+<span class="token class">.pagination</span> &gt; <span class="token class">.active</span> &gt; span,
+<span class="token class">.pagination</span> &gt; <span class="token class">.active</span> &gt; a<span class="token pseudo-class">:hover</span>,
+<span class="token class">.pagination</span> &gt; <span class="token class">.active</span> &gt; span<span class="token pseudo-class">:hover</span>,
+<span class="token class">.pagination</span> &gt; <span class="token class">.active</span> &gt; a<span class="token pseudo-class">:focus</span>,
+<span class="token class">.pagination</span> &gt; <span class="token class">.active</span> &gt; span<span class="token pseudo-class">:focus</span></span> <span class="token punctuation">{</span>
+    <span class="token property">z-index</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> default<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#337ab7</span><span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#337ab7</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector"><span class="token class">.pagination</span> &gt; <span class="token class">.disabled</span> &gt; span,
+<span class="token class">.pagination</span> &gt; <span class="token class">.disabled</span> &gt; span<span class="token pseudo-class">:hover</span>,
+<span class="token class">.pagination</span> &gt; <span class="token class">.disabled</span> &gt; span<span class="token pseudo-class">:focus</span>,
+<span class="token class">.pagination</span> &gt; <span class="token class">.disabled</span> &gt; a,
+<span class="token class">.pagination</span> &gt; <span class="token class">.disabled</span> &gt; a<span class="token pseudo-class">:hover</span>,
+<span class="token class">.pagination</span> &gt; <span class="token class">.disabled</span> &gt; a<span class="token pseudo-class">:focus</span></span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#777</span><span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> not-allowed<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fff</span><span class="token punctuation">;</span>
+    <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token hexcode">#ddd</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><hr>
+<h2 class="mume-header" id="%E5%8D%81-%E6%A8%A1%E7%89%88%E5%88%86%E9%A1%B5%E7%A4%BA%E4%BE%8B">&#x5341;&#x3001;&#x6A21;&#x7248;&#x5206;&#x9875;&#x793A;&#x4F8B;</h2>
+
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x63CF;&#x8FF0;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list_rows</td>
+<td>&#x6BCF;&#x9875;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>page</td>
+<td>&#x5F53;&#x524D;&#x9875;</td>
+</tr>
+<tr>
+<td>path</td>
+<td>url&#x8DEF;&#x5F84;</td>
+</tr>
+<tr>
+<td>query</td>
+<td>url&#x989D;&#x5916;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>fragment</td>
+<td>url&#x951A;&#x70B9;</td>
+</tr>
+<tr>
+<td>var_page</td>
+<td>&#x5206;&#x9875;&#x53D8;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>controller&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">index</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token variable">$title</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&#x5546;&#x57CE;&apos;</span><span class="token punctuation">;</span>
+    <span class="token variable">$login</span> <span class="token operator">=</span> <span class="token single-quoted-string string">&apos;&#x6B27;&#x9633;&#x514B;&apos;</span><span class="token punctuation">;</span>
+    <span class="token shell-comment comment"># &#x5DE6;&#x4FA7;&#x83DC;&#x5355;</span>
+    <span class="token variable">$menu</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_menu&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;fid&apos;</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$left</span> <span class="token operator">=</span> <span class="token variable">$menu</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$left</span> <span class="token keyword">as</span> <span class="token operator">&amp;</span><span class="token variable">$left_v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$left_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;lists&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_menu&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;fid&apos;</span><span class="token punctuation">,</span><span class="token variable">$left_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token shell-comment comment"># &#x53F3;&#x4FA7;&#x5217;&#x8868;</span>
+    <span class="token variable">$param</span> <span class="token operator">=</span> <span class="token scope">Request<span class="token punctuation">::</span></span><span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token variable">$where</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token variable">$p</span> <span class="token operator">=</span> <span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;p&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;p&apos;</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token shell-comment comment"># thinkphp &#x81EA;&#x5E26;&#x5206;&#x9875;</span>
+    <span class="token variable">$list</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token variable">$where</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;add_time DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">order</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id DESC&apos;</span><span class="token punctuation">)</span>
+            <span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">paginate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+                <span class="token single-quoted-string string">&apos;list_rows&apos;</span><span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">10</span><span class="token punctuation">,</span>
+                <span class="token single-quoted-string string">&apos;query&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Request<span class="token punctuation">::</span></span><span class="token function">param</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$right</span> <span class="token operator">=</span> <span class="token variable">$list</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">foreach</span><span class="token punctuation">(</span><span class="token variable">$right</span> <span class="token keyword">as</span> <span class="token operator">&amp;</span><span class="token variable">$right_v</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token variable">$right_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;cat&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_cat&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">where</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;id&apos;</span><span class="token punctuation">,</span><span class="token variable">$right_v</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;cat&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;name&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">&apos;title&apos;</span>  <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$title</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;login&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$login</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;left&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$left</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;right&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$right</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;list&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$list</span><span class="token punctuation">,</span>
+        <span class="token single-quoted-string string">&apos;status&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">isset</span><span class="token punctuation">(</span><span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token variable">$param</span><span class="token punctuation">[</span><span class="token single-quoted-string string">&apos;status&apos;</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> <span class="token number">0</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token scope">View<span class="token punctuation">::</span></span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><blockquote>
+<p>view&#x4EE3;&#x7801;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>{$paginate|raw}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</pre><hr>
+<h3 class="mume-header" id="%E5%8D%81%E4%B8%80-sql-%E8%B0%83%E8%AF%95">&#x5341;&#x4E00;&#x3001;<code>SQL</code> &#x8C03;&#x8BD5;</h3>
+
+<ul>
+<li><code>getLastSql</code> &#x8F93;&#x51FA;&#x4E0A;&#x6B21;&#x6267;&#x884C;&#x7684;sql&#x8BED;&#x53E5;</li>
+<li><code>getLastSql</code> &#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x6700;&#x540E;&#x6267;&#x884C;&#x7684; <code>SQL</code> &#x8BB0;&#x5F55;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">getLastSql</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ul>
+<li><code>fetchSql</code> &#x65B9;&#x6CD5;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x7684; <code>SQL</code> &#x800C;&#x4E0D;&#x6267;&#x884C;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token variable">$select</span> <span class="token operator">=</span> <span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_goods&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">fetchSql</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$select</span><span class="token punctuation">;</span>
+</pre><hr>
+<h3 class="mume-header" id="%E5%8D%81%E4%BA%8C-%E5%8A%A8%E6%80%81%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93">&#x5341;&#x4E8C;&#x3001;&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;</h3>
+
+<ul>
+<li><code>config</code>&#x76EE;&#x5F55;<code>database.php</code>&#x6587;&#x4EF6;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token keyword">return</span> <span class="token punctuation">[</span>
+    <span class="token single-quoted-string string">&apos;connections&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token single-quoted-string string">&apos;ouyangke&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x7C7B;&#x578B;</span>
+            <span class="token single-quoted-string string">&apos;type&apos;</span>              <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.type&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;mysql&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;</span>
+            <span class="token single-quoted-string string">&apos;hostname&apos;</span>          <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.hostname&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;127.0.0.1&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x540D;</span>
+            <span class="token single-quoted-string string">&apos;database&apos;</span>          <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">&apos;ouyangke&apos;</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x7528;&#x6237;&#x540D;</span>
+            <span class="token single-quoted-string string">&apos;username&apos;</span>          <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.username&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x5BC6;&#x7801;</span>
+            <span class="token single-quoted-string string">&apos;password&apos;</span>          <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.password&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;root&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x7AEF;&#x53E3;</span>
+            <span class="token single-quoted-string string">&apos;hostport&apos;</span>          <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.hostport&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;3306&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x53C2;&#x6570;</span>
+            <span class="token single-quoted-string string">&apos;params&apos;</span>            <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x7F16;&#x7801;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;utf8</span>
+            <span class="token single-quoted-string string">&apos;charset&apos;</span>           <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.charset&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;utf8&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x8868;&#x524D;&#x7F00;</span>
+            <span class="token single-quoted-string string">&apos;prefix&apos;</span>            <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token scope">Env<span class="token punctuation">::</span></span><span class="token function">get</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;database.prefix&apos;</span><span class="token punctuation">,</span> <span class="token single-quoted-string string">&apos;shop_&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x90E8;&#x7F72;&#x65B9;&#x5F0F;:0 &#x96C6;&#x4E2D;&#x5F0F;(&#x5355;&#x4E00;&#x670D;&#x52A1;&#x5668;),1 &#x5206;&#x5E03;&#x5F0F;(&#x4E3B;&#x4ECE;&#x670D;&#x52A1;&#x5668;)</span>
+            <span class="token single-quoted-string string">&apos;deploy&apos;</span>            <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6570;&#x636E;&#x5E93;&#x8BFB;&#x5199;&#x662F;&#x5426;&#x5206;&#x79BB; &#x4E3B;&#x4ECE;&#x5F0F;&#x6709;&#x6548;</span>
+            <span class="token single-quoted-string string">&apos;rw_separate&apos;</span>       <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x8BFB;&#x5199;&#x5206;&#x79BB;&#x540E; &#x4E3B;&#x670D;&#x52A1;&#x5668;&#x6570;&#x91CF;</span>
+            <span class="token single-quoted-string string">&apos;master_num&apos;</span>        <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x6307;&#x5B9A;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x5E8F;&#x53F7;</span>
+            <span class="token single-quoted-string string">&apos;slave_no&apos;</span>          <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token single-quoted-string string">&apos;&apos;</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x662F;&#x5426;&#x4E25;&#x683C;&#x68C0;&#x67E5;&#x5B57;&#x6BB5;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+            <span class="token single-quoted-string string">&apos;fields_strict&apos;</span>     <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x662F;&#x5426;&#x9700;&#x8981;&#x65AD;&#x7EBF;&#x91CD;&#x8FDE;</span>
+            <span class="token single-quoted-string string">&apos;break_reconnect&apos;</span>   <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x76D1;&#x542C;SQL</span>
+            <span class="token single-quoted-string string">&apos;trigger_sql&apos;</span>       <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x5F00;&#x542F;&#x5B57;&#x6BB5;&#x7F13;&#x5B58;</span>
+            <span class="token single-quoted-string string">&apos;fields_cache&apos;</span>      <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            <span class="token comment">// &#x5B57;&#x6BB5;&#x7F13;&#x5B58;&#x8DEF;&#x5F84;</span>
+            <span class="token single-quoted-string string">&apos;schema_cache_path&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getRuntimePath</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;schema&apos;</span> <span class="token punctuation">.</span> <span class="token constant">DIRECTORY_SEPARATOR</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</pre><ul>
+<li><code>ouyangke</code>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;<code>shop_user</code>&#x8868;</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> <span class="token punctuation">`</span>shop_user<span class="token punctuation">`</span> <span class="token punctuation">(</span>
+    <span class="token punctuation">`</span>uid<span class="token punctuation">`</span> <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">unsigned</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">AUTO_INCREMENT</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x7528;&#x6237;ID&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>account<span class="token punctuation">`</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x8D26;&#x6237;&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>password<span class="token punctuation">`</span> <span class="token keyword">char</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x5BC6;&#x7801;&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>name<span class="token punctuation">`</span> <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x59D3;&#x540D;&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span><span class="token keyword">status</span><span class="token punctuation">`</span> <span class="token keyword">tinyint</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">unsigned</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">DEFAULT</span> <span class="token string">&apos;1&apos;</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x72B6;&#x6001; 1&#x5F00;&#x542F; 2&#x5173;&#x95ED;&apos;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">`</span>add_time<span class="token punctuation">`</span> <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">unsigned</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">COMMENT</span> <span class="token string">&apos;&#x6DFB;&#x52A0;&#x65F6;&#x95F4;&apos;</span><span class="token punctuation">,</span>
+    <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span><span class="token punctuation">`</span>uid<span class="token punctuation">`</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span> <span class="token keyword">ENGINE</span><span class="token operator">=</span>MyISAM <span class="token keyword">AUTO_INCREMENT</span><span class="token operator">=</span><span class="token number">3</span> <span class="token keyword">DEFAULT</span> <span class="token keyword">CHARSET</span><span class="token operator">=</span>utf8mb4 <span class="token keyword">COMMENT</span><span class="token operator">=</span><span class="token string">&apos;&#x540E;&#x53F0;&#x7BA1;&#x7406;&#x5458;&apos;</span><span class="token punctuation">;</span>
+</pre><ul>
+<li><code>connect</code> &#x65B9;&#x6CD5;&#x52A8;&#x6001;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;</li>
+</ul>
+<pre data-role="codeBlock" data-info="php" class="language-php"><span class="token scope">Db<span class="token punctuation">::</span></span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;ouyangke&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">table</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;shop_user&apos;</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><blockquote>
+<p>connect &#x65B9;&#x6CD5;&#x5FC5;&#x987B;&#x5728;&#x67E5;&#x8BE2;&#x7684;&#x6700;&#x5F00;&#x59CB;&#x8C03;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x5FC5;&#x987B;&#x7D27;&#x8DDF;&#x7740;&#x8C03;&#x7528;&#x67E5;&#x8BE2;&#x65B9;&#x6CD5;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x90E8;&#x5206;&#x67E5;&#x8BE2;&#x5931;&#x6548;&#x6216;&#x8005;&#x4F9D;&#x7136;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;</p>
+</blockquote>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

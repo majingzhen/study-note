@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<!-- queryParams为查询参数,用来传递至下一个路由 -->
+<a routerLink="/parent/child/666">打开子页面</a>
+<button (click)="toChild()">打开子页面并携带ID</button>
+<!-- 这里为路由的出入口，子路由会被渲染到这里 -->
+<router-outlet></router-outlet>
