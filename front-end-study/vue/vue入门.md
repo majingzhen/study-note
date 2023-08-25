@@ -1007,8 +1007,6 @@ this.$store.dispatch("asyncAddCounter")
 this.asyncAddCounter()
 ```
 
-
-
 ## vue3 新特性
 
 ### 六大亮点
@@ -1020,8 +1018,6 @@ this.asyncAddCounter()
 - Better TypeScript support: 更优秀的Ts支持
 - Custom Renderer API: 暴露了自定义染API
 
-
-
 ### 组合式API
 
 #### ref 或者 reactive
@@ -1032,10 +1028,7 @@ this.asyncAddCounter()
 const name = ref("matuto")
 
 const names = reactive({      data: ["张三","李四", "王五"]    })
-
 ```
-
-
 
 #### 声明方法
 
@@ -1046,8 +1039,6 @@ function clickHandle() {
     message.value = "majz"
 }
 ```
-
-
 
 #### 使用props和context
 
@@ -1087,7 +1078,6 @@ export default {
     }
   }
 }
-
 ```
 
 #### 使用生命周期函数
