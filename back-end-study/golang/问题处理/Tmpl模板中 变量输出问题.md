@@ -23,12 +23,8 @@ strings.Trim(s, "\"")
 
 发现都不好用，还是不起作用。
 
-
-
 ### 解决方法
 
 使用 `text/template` 包
 
 在 使用 template 对象进行模板处理的时候，没有关注到自己导入的包，发现使用的`html/template` 改成 `text/template` 具体原因还不清楚，有空了还需要研究一下。
-
-
